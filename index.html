@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>QRDI PORTAL</title>
+</head>
+
+<body>
+  <!-- ************* START HEADER SECTION ************* -->
+  <header>
+    <nav class="navbar navbar-expand-lg red-bg">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi navbar-toggler-icon"><img src="./assets/bar.png" alt="" width="100%"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled pe-0">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container gap-3 gap-sm-3 justify-content-center justify-content-lg-between">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="logo" width="180" />
+        </a>
+        <form class="">
+          <div class="input-group search-field">
+            <span class="input-group-text border-0" id="basic-addon1"><img src="./assets/search.png" alt="logo"
+                width="" /></span>
+            <input type="text" class="form-control border-0" placeholder="Search" aria-label="Search"
+              aria-describedby="basic-addon1" />
+          </div>
+        </form>
+        <form class="d-flex" role="">
+          <a class="align-self-center" href="#">
+            <img src="./assets/Vector.svg" alt="logo" width="" />
+          </a>
+          <button class="btn rounded-0 mx-3 text-black btn-outline-dark" type="submit">
+            Login
+          </button>
+          <button class="btn rounded-0 text-white green-bg border-0" type="submit">
+            Register
+          </button>
+        </form>
+      </div>
+    </nav>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <ul class="nav nav-pills p-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Opportunities</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Infrastructure</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Entities</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- ************* END HEADER SECTION ************* -->
+  <!-- ************* START FIRST FOLD SECTION ************* -->
+  <div class="first-fold my-4">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-12 col-lg-6">
+          <div class="main-title mb-3">
+            Connect, collaborate, and <br /><span class="red-text">create.</span>
+          </div>
+          <div class="sub-title mb-5">
+            A national platform for researchers and innovators to browse
+            thousands of assets and leverage shared resources.
+          </div>
+          <div class="cards row row-cols-2 gy-3">
+            <div class="col-12 col-sm-6">
+              <div class="card">
+                <a href="#">
+                  <img src="./assets/entites.svg" class="card-image" alt="Entities" />
+                  <div class="card-body p-0">
+                    <h6 class="card-title">Entities</h6>
+                    <p class="card-text">
+                      Universities, hospitals, labs and any organization that
+                      houses innovation
+                    </p>
+                  </div>
+                  <p class="arrow">
+                    <img src="./assets/red-arrow.svg" alt="arrow" />
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="card">
+                <a href="#">
+                  <img src="./assets/facilities.svg" class="card-image" alt="Facilities" />
+                  <div class="card-body p-0">
+                    <h6 class="card-title">Facilities</h6>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </p>
+                  </div>
+                  <p class="arrow">
+                    <img src="./assets/red-arrow.svg" alt="arrow" />
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="card">
+                <a href="#">
+                  <img src="./assets/equipment.svg" class="card-image" alt="Equipment" />
+                  <div class="card-body p-0">
+                    <h6 class="card-title">Equipment</h6>
+                    <p class="card-text">
+                      Specialised tools and technologies found across Qatar’s
+                      research academic institutions
+                    </p>
+                  </div>
+                  <p class="arrow">
+                    <img src="./assets/red-arrow.svg" alt="arrow" />
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="card">
+                <a href="#">
+                  <img src="./assets/services.svg" class="card-image" alt="Services" />
+                  <div class="card-body p-0">
+                    <h6 class="card-title">Services</h6>
+                    <p class="card-text">
+                      Molecular diagnostic, data collection, air quality and
+                      prototyping electronic items
+                    </p>
+                  </div>
+                  <p class="arrow">
+                    <img src="./assets/red-arrow.svg" alt="arrow" />
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* END FIRST FOLD SECTION ************* -->
+  <!-- ************* START PUBLICATION SECTION ************* -->
+  <div class="container publication py-5">
+    <div class="row">
+      <div class="col-12 col-md-6 main-title">
+        Publications<span class="red-text">.</span>
+      </div>
+      <div class="col-12 col-md-6 sub-title flex align-self-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        ultricies ut est.
+      </div>
+    </div>
+    <div class="swiper-section mt-4">
+      <p>Latest publications</p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card p-0">
+              <div class="card-body p-0 pt-3">
+                <span class="highlited-text p-2 ms-3 d-inline-block">Journal Paper</span>
+                <h5 class="card-title my-4 px-3">
+                  Scalability of microbial electrochemical technologies:
+                  Applications and challenges
+                </h5>
+                <p class="card-text px-3">
+                  2 authors <span class="square">Date</span>
+                </p>
+                <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-0">
+              <div class="card-body p-0 pt-3">
+                <span class="highlited-text p-2 ms-3 d-inline-block">Journal Paper</span>
+                <h5 class="card-title my-4 px-3">
+                  Scalability of microbial electrochemical technologies:
+                  Applications and challenges
+                </h5>
+                <p class="card-text px-3">
+                  2 authors <span class="square">Date</span>
+                </p>
+                <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-0">
+              <div class="card-body p-0 pt-3">
+                <span class="highlited-text p-2 ms-3 d-inline-block">Journal Paper</span>
+                <h5 class="card-title my-4 px-3">
+                  Scalability of microbial electrochemical technologies:
+                  Applications and challenges
+                </h5>
+                <p class="card-text px-3">
+                  2 authors <span class="square">Date</span>
+                </p>
+                <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-0">
+              <div class="card-body p-0 pt-3">
+                <span class="highlited-text p-2 ms-3 d-inline-block">Journal Paper</span>
+                <h5 class="card-title my-4 px-3">
+                  Scalability of microbial electrochemical technologies:
+                  Applications and challenges
+                </h5>
+                <p class="card-text px-3">
+                  2 authors <span class="square">Date</span>
+                </p>
+                <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-0">
+              <div class="card-body p-0 pt-3">
+                <span class="highlited-text p-2 ms-3 d-inline-block">Journal Paper</span>
+                <h5 class="card-title my-4 px-3">
+                  Scalability of microbial electrochemical technologies:
+                  Applications and challenges
+                </h5>
+                <p class="card-text px-3">
+                  2 authors <span class="square">Date</span>
+                </p>
+                <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="./assets/right_arrow.png" alt="to right" />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="./assets/left_arrow.png" alt="to left" />
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-more-btn">
+          <a href="#">Browse more publications
+            <img src="./assets/link_arrow.png" alt="arrow" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* END PUBLICATION SECTION ************* -->
+  <!-- ************* START PROJECTS SECTION ************* -->
+  <div class="publication py-5" style="background-color: #fafafa">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 main-title">
+          Projects<span class="red-text">.</span>
+        </div>
+        <div class="col-12 col-md-6 sub-title flex align-self-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          ultricies ut est.
+        </div>
+      </div>
+      <div class="swiper-section mt-4">
+        <p>Latest publications</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card p-0">
+                <div class="card-body p-0 pt-3">
+                  <span class="highlited-text2 p-2 ms-3 d-inline-block">Journal Paper</span>
+                  <h5 class="card-title my-4 px-3">
+                    Scalability of microbial electrochemical technologies:
+                    Applications and challenges
+                  </h5>
+                  <p class="card-text px-3">
+                    2 authors <span class="square">Date</span>
+                  </p>
+                  <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-0">
+                <div class="card-body p-0 pt-3">
+                  <span class="highlited-text2 p-2 ms-3 d-inline-block">Journal Paper</span>
+                  <h5 class="card-title my-4 px-3">
+                    Scalability of microbial electrochemical technologies:
+                    Applications and challenges
+                  </h5>
+                  <p class="card-text px-3">
+                    2 authors <span class="square">Date</span>
+                  </p>
+                  <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-0">
+                <div class="card-body p-0 pt-3">
+                  <span class="highlited-text2 p-2 ms-3 d-inline-block">Journal Paper</span>
+                  <h5 class="card-title my-4 px-3">
+                    Scalability of microbial electrochemical technologies:
+                    Applications and challenges
+                  </h5>
+                  <p class="card-text px-3">
+                    2 authors <span class="square">Date</span>
+                  </p>
+                  <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-0">
+                <div class="card-body p-0 pt-3">
+                  <span class="highlited-text2 p-2 ms-3 d-inline-block">Journal Paper</span>
+                  <h5 class="card-title my-4 px-3">
+                    Scalability of microbial electrochemical technologies:
+                    Applications and challenges
+                  </h5>
+                  <p class="card-text px-3">
+                    2 authors <span class="square">Date</span>
+                  </p>
+                  <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card p-0">
+                <div class="card-body p-0 pt-3">
+                  <span class="highlited-text2 p-2 ms-3 d-inline-block">Journal Paper</span>
+                  <h5 class="card-title my-4 px-3">
+                    Scalability of microbial electrochemical technologies:
+                    Applications and challenges
+                  </h5>
+                  <p class="card-text px-3">
+                    2 authors <span class="square">Date</span>
+                  </p>
+                  <a href="#" class="btn d-block text-start p-3 border-top rounded-0">View Publication</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="./assets/right_arrow.png" alt="to right" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="./assets/left_arrow.png" alt="to left" />
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-more-btn">
+            <a href="#">Browse more publications
+              <img src="./assets/link_arrow.png" alt="arrow" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* END PROJECTS SECTION ************* -->
+
+  <!-- ************* START OPEN INNOVATION SECTION ************* -->
+  <div class="open-inno">
+    <div class="container">
+      <div class="row text-start">
+        <div class="col-12 col-lg-6">
+          <div class="content mb-3">
+            <div class="mb-3 mb-md-5">
+              <img class="open-inno-logo" src="./assets/open-inno-logo.svg" alt="Qatar Open Innovation." />
+            </div>
+            <h2 class="mb-3 mb-md-4 fw-bold">Qatar Open Innovation.</h2>
+            <p>
+              Local Opportunity Owners to identify and frame these
+              opportunities, issue innovation calls, evaluate submitted
+              proposals, and award winners to pilot innovative solutions.
+            </p>
+          </div>
+          <div class="discover">
+            <a href="#">Discover more <img src="./assets/link_arrow.png" alt="arrow" /></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6"></div>
+      </div>
+    </div>
+  </div>
+  <!-- ************* END INNOVATION SECTION ************* -->
+
+  <!-- ************* START Corporate Innovation Leaders SECTION ************* -->
+  <section class="leaders">
+    <div class="container py-5">
+      <div class="row">
+        <div
+          class="col-12 col-lg-6 align-self-center text-center text-lg-start relative position-relative z-2 d-flex flex-column justify-content-center align-items-start">
+          <div class="content mb-3 position-relative z-2">
+            <h1 class="fw-bold mb-4 lh-sm">Corporate Innovation Leaders.</h1>
+            <p class="mb-3 mb-lg-4 px-5 px-md-0">
+              Local Opportunity Owners to identify and frame these
+              opportunities, issue innovation calls, evaluate submitted
+              proposals, and award winners to pilot innovative solutions.
+            </p>
+          </div>
+          <div class="buttons position-relative z-2 ">
+            <a href="#" class="white-btn text-decoration-none bg-white">See how it works<img
+                src="./assets/link-arrow-red.png" alt="arrow" /></a>
+            <a href="#" class="red-btn red-bg text-white text-decoration-none">Register your interest<img
+                src="./assets/link_arrow.png" alt="arrow" /></a>
+          </div>
+          <img src="./assets/bullets-bg.png" class="bullets-bg z-1 position-absolute" />
+        </div>
+        <div class="col-12 col-lg-6 profile position-relative z-2">
+          <img class="man w-100 d-block mx-auto position-relative z-1" src="./assets/handsome-man.png" alt="man" />
+          <img src="./assets/red-border.png" class="red-border position-absolute z-2" alt="" />
+          <img src="./assets/gray-border.png" class="gray-border position-absolute z-2" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ************* END Corporate Innovation Leaders SECTION ************* -->
+
+  <!-- Footer -->
+  <footer class="text-center text-md-start bg-black">
+    <div class="footer-border">
+      <div class="container">
+        <div
+          class="footer-head d-flex flex-column justify-content-center flex-md-row justify-content-md-between align-items-center">
+          <div class="logo">
+            <img src="./assets/white-logo.svg" alt="logo" />
+          </div>
+          <div class="social d-flex justify-content-center justify-content-md-end align-items-center">
+            <a href=""><img src="./assets/twitter.svg" alt="twitter" class="p-3 p-md-4" /></a>
+            <a href=""><img src="./assets/linkedin.svg" alt="linkedin" class="p-3 p-md-4" /></a>
+            <a href=""><img src="./assets/fb.svg" alt="fb" class="p-3 p-md-4" /></a>
+            <a href=""><img src="./assets/insta.svg" alt="insta" class="p-3 p-md-4" /></a>
+            <a href=""><img src="./assets/youtube.svg" alt="youtube" class="p-3 p-md-4" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Grid container -->
+    <div class="container pt-5">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">About</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">Qatar open innovation</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">Infrastracture</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">Entities</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">QRDI Council </a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+          <h5 class="text-uppercase mb-4 text-white fw-bold">Contact</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">PO Box 5825, ThinkBay, Education City,
+                Doha</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">www.qrdi.org.qa</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white text-decoration-none fw-normal">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-5 mb-md-0">
+          <h5 class="text-uppercase fw-bold text-white mb-4">
+            Sign up to our newsletter
+          </h5>
+          <p class="mb-3 text-white fw-normal">
+            Keep up to date with the latest news from QRDI portal
+          </p>
+          <div class="">
+            <input type="email" class="p-3 form-control mb-3 text-white border-0 rounded-0"
+              placeholder="Email address" />
+          </div>
+          <div class="">
+            <button type="submit"
+              class="p-3 w-100 border-0 text-white fw-bold footer-btn red-bg transition">Submit</button>
+          </div>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="container text-center text-md-start pt-md-3 pb-5 text-white" style="font-size: 14px; font-weight: 200">
+      <span class="fw-semibold">This template is a design sample created to demonstrate my development skills, and
+        remain the property of their respective owners.</span><br />
+      Copyright © 2024, Maher Al Rifai.
+      All Rights Reserved
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      initialSlide: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      slidesPerGroupSkip: 1,
+      grabCursor: true,
+      keyboard: {
+        enabled: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+    });
+  </script>
+</body>
+
+</html>
