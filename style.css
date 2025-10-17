@@ -6,18 +6,22 @@
   transition: all 0.3s;
 }
 .red-bg {
-  background-color: #91012e;
+  background-color: var(--my-red);
 }
 .green-bg {
   background-color: #115e67;
 }
 .red-text {
-  color: #91012e;
+  color: var(--my-red);
 }
 
 .navbar-toggler {
   background-color: #ffffff;
   font-size: 1rem;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+  border: 2px solid #000000;
 }
 .navbar-toggler-icon {
   color: red;
@@ -25,11 +29,14 @@
 .navbar-collapse {
   justify-content: end;
   color: white;
+  padding-top: 1rem;
+}
+.navbar-collapse .nav-item{
+  margin-left: 24px;
 }
 .navbar-collapse .nav-item .nav-link {
   color: #ffffff;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+padding-bottom: 1rem;
 }
 .search-field {
   width: 450px;
@@ -52,7 +59,8 @@
   box-shadow: none;
 }
 .btn-outline-dark:hover {
-  background-color: #ffffff;
+  background-color: black;
+  color: white !important;
 }
 .nav-pills {
   gap: 70px;
@@ -108,7 +116,7 @@
   transition: 0.5s;
 }
 .first-fold .cards .card:hover {
-  border: 2px solid #91012e;
+  border: 2px solid var(--my-red);
 }
 .first-fold .cards .card:hover .arrow {
   opacity: 1;
@@ -247,11 +255,14 @@
   color: #ffffff;
   background-color: var(--my-red);
   text-decoration: none;
+  transition: 0.3s;
 }
 .swiper .swiper-more-btn a img {
   margin-left: 25px;
 }
-
+.swiper .swiper-more-btn a:hover{
+  background: var(--my-green);
+}
 /* Publications styling end */
 
 /* first open innovation start */
@@ -356,6 +367,12 @@ footer .footer-btn:hover {
   }
 }
 @media (max-width: 992px) {
+  .navbar{
+    padding: 1rem 0;
+  }
+  .navbar-collapse .nav-item{
+  margin: 0px;
+}
   .nav-pills {
     gap: 20px;
   }
