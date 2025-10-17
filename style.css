@@ -87,7 +87,6 @@
 }
 .first-fold .cards .card {
   align-items: start;
-  padding: 16px;
   font-size: 14px;
   min-height: 175px;
   position: relative;
@@ -121,33 +120,39 @@
 /* first fold styling end */
 
 /* Publications styling start */
-.swiper {
-  width: 100%;
-  height: 100%;
+.swiper-slide .card,
+.swiper-slide img{
+  transition: 0.3s;
+  cursor: initial;
 }
-
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.swiper-slide .card:hover {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
 }
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
+.swiper-slide .card:hover img{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.swiper-slide .card:hover .btn{
+  color: var(--my-green);
 }
 .swiper .highlited-text {
-  color: #a30134;
+  top: 0px;
+  left: 0px;
+  color: var(--my-red);
   background-color: #ffdae6;
-  font-size: 14px;
+  font-size: 12px;
+}
+.swiper .highlited-text2 {
+  top: 0px;
+  left: 0px;
+  color: var(--my-green);
+  background-color: #a7e4de;
+  font-size: 12px;
 }
 .swiper .card .card-text {
   font-size: 13px;
 }
 .swiper .square {
-  position: relative;
   margin-left: 10px;
   padding-left: 10px;
 }
@@ -156,15 +161,14 @@
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(-100%, -50%);
+  transform: translate(-100%, 0%);
   background-color: #000000;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 .swiper .btn {
-  color: #a30134;
+  color: var(--my-red);
 }
-
 .swiper {
   padding-bottom: 100px;
 }
@@ -206,6 +210,7 @@
   bottom: 0;
   border: 1px solid #000000;
   padding: 25px;
+  left: 0 !important;
 }
 .swiper .swiper-button-next {
   top: initial;
@@ -233,28 +238,23 @@
 }
 .swiper .swiper-more-btn {
   position: absolute;
-  bottom: 16px;
+  bottom: 0px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50% , -12px);
 }
 .swiper .swiper-more-btn a {
   padding: 16px 20px;
   color: #ffffff;
-  background-color: #a30134;
+  background-color: var(--my-red);
   text-decoration: none;
 }
 .swiper .swiper-more-btn a img {
-  margin-left: 50px;
+  margin-left: 25px;
 }
-.swiper .highlited-text2 {
-  color: #0a4f57;
-  background-color: #a7e4de;
-  font-size: 14px;
-}
+
 /* Publications styling end */
 
 /* first open innovation start */
-
 .open-inno {
   background: no-repeat center;
   background-size: cover;
@@ -263,7 +263,6 @@
 }
 .open-inno .content {
   padding: 50px;
-  background-color: #ffffff;
 }
 .open-inno .content .open-inno-logo {
   max-width: 270px;
@@ -304,6 +303,11 @@
 .leaders .relative .red-btn {
   padding: 16px 20px;
   border: 1px solid var(--my-red);
+  transition:all 0.3s;
+}
+.leaders .relative .red-btn:hover {
+  border: 1px solid var(--my-green);
+  background-color: var(--my-green);
 }
 .leaders .relative .white-btn img,
 .leaders .relative .red-btn img {
@@ -361,11 +365,9 @@ footer .footer-btn:hover {
     line-height: 40px;
   }
   .swiper .swiper-more-btn {
-    position: absolute;
-    bottom: 16px;
     left: initial;
     right: 0;
-    transform: translateX(0%);
+    transform: translate(0%, -12px);
   }
   .swiper .swiper-more-btn a img {
     margin-left: 20px;
@@ -425,22 +427,22 @@ footer .footer-btn:hover {
     font-size: 16px;
   }
   .swiper {
-    padding-bottom: 120px;
+    padding-bottom: 160px;
   }
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {
-    bottom: 60px;
+    bottom: 80px;
   }
   .swiper .swiper-pagination {
-    bottom: 73px;
+    bottom: 93px;
   }
   .swiper .swiper-more-btn {
     right: initial;
-    left: 10px;
+    left: 0px;
   }
   .swiper .swiper-more-btn a,
   .open-inno .discover a {
-    padding: 10px 15px;
+    padding: 16px;
   }
   .swiper .swiper-more-btn a img,
   .open-inno .discover a img {
